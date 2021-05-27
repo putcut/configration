@@ -1,8 +1,14 @@
 syntax on
 set number
-set ai
+# カーソル位置表示
+set ruler
+# 検索結果のハイライト
 set hlsearch
-set incsearch
+# 何個分のスペースで1つのtabか
 set tabstop=2
+# 自動インデントの幅
 set shiftwidth=2
+# tabキーで空白を使う
 set expandtab
+# autoindent
+set ai
