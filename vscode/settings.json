@@ -1,0 +1,13 @@
+{
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
+  "workbench.tree.indent": 16,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<ESC>"]
+    }
+  ],
+  "vim.hlsearch": true
+}
