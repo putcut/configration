@@ -1,13 +1,34 @@
 {
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "extensions.ignoreRecommendations": true,
-  "workbench.tree.indent": 16,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<ESC>"]
-    }
-  ],
-  "vim.hlsearch": true
+    "editor.fontFamily": "Consolas, 'Courier New', monospace, メイリオ",
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "workbench.colorTheme": "monokai-charcoal (white)",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 16,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<ESC>"]
+        }
+    ],
+    "vim.hlsearch": true,
+    "vim.handleKeys": {
+        "<C-h>": false,
+        "<C-f>": false,
+        "<C-q>": false
+    },
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/vscode/.vscode-server/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
