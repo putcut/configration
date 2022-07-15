@@ -15,13 +15,44 @@
         "when": "!terminalFocus"
     },
     {
+        "key": "ctrl+'",
+        "command": "workbench.action.closePanel",
+        "when": "!terminalFocus"
+    },
+    {
         "key": "ctrl+;",
         "command": "workbench.action.closePanel",
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
         "key": "ctrl+q",
-        "command": "workbench.action.closeActiveEditor"
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.focus",
+        "when": "explorerViewletFocus"
     },
     {
         "key": "ctrl+w",
