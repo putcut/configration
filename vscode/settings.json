@@ -1,11 +1,13 @@
 {
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 16,
     "editor.fontFamily": "Consolas, 'Courier New', monospace, メイリオ",
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
-    "workbench.colorTheme": "monokai-charcoal (white)",
-    "workbench.startupEditor": "none",
-    "workbench.tree.indent": 16,
+    "file.eol": "\n",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -13,22 +15,30 @@
         "**/.factorypath": true
     },
     "extensions.ignoreRecommendations": true,
-    "terminal.integrated.defaultLocation": "editor",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-q>": false
+    },
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
             "after": ["<ESC>"]
         }
     ],
-    "vim.hlsearch": true,
-    "vim.handleKeys": {
-        "<C-h>": false,
-        "<C-f>": false,
-        "<C-q>": false
-    },
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.semanticHighlighting.enabled": true,
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/vscode/.vscode-server/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        },
+    ],
+    "glassit.alpha": 240,
+    "window.commandCenter": true,
+    "window.newWindowDimensions": "maximized"
 }

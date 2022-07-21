@@ -1,42 +1,31 @@
 // Place your key bindings in this file to override the defaults
 [
-    // {
-    //     "key": "ctrl+;",
-    //     "command": "workbench.action.terminal.focus"
-    // },
-    // {
-    //     "key": "ctrl+;",
-    //     "command": "workbench.action.focusFirstEditorGroup",
-    //     "when": "terminalFocus"
-    // },
+    // For terminal
     {
         "key": "ctrl+;",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+'",
-        "command": "workbench.action.closePanel",
-        "when": "!terminalFocus"
-    },
-    {
         "key": "ctrl+;",
         "command": "workbench.action.closePanel",
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.focus",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.closePanel",
+        "when": "!terminalFocus"
+    },
+
+    // In terminal
+    {
         "key": "ctrl+t",
         "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
@@ -45,14 +34,26 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
+    },
+
+    // For close window
+    {
         "key": "ctrl+q",
         "command": "workbench.action.closeActiveEditor",
         "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+;",
-        "command": "workbench.action.terminal.focus",
-        "when": "explorerViewletFocus"
     },
     {
         "key": "ctrl+w",
