@@ -49,12 +49,24 @@
         "when": "terminalFocus"
     },
 
-    // For close window
+    // In editor
     {
         "key": "ctrl+q",
         "command": "workbench.action.closeActiveEditor",
         "when": "editorFocus"
     },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus"
+    },
+
+    // For close window
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
