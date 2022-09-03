@@ -7,7 +7,17 @@
         "when": "!terminalFocus"
     },
     {
+        "key": "ctrl+`",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!terminalFocus"
+    },
+    {
         "key": "ctrl+;",
+        "command": "workbench.action.closePanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+`",
         "command": "workbench.action.closePanel",
         "when": "terminalFocus"
     },
@@ -17,14 +27,24 @@
         "when": "explorerViewletFocus"
     },
     {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "explorerViewletFocus"
+    },
+    {
         "key": "ctrl+'",
+        "command": "workbench.action.closePanel",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+t",
         "command": "workbench.action.closePanel",
         "when": "!terminalFocus"
     },
 
     // In terminal
     {
-        "key": "ctrl+t",
+        "key": "ctrl+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
@@ -56,17 +76,22 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+j",
+        "key": "ctrl+g",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
         "command": "workbench.action.previousEditor",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+k",
+        "key": "ctrl+l",
         "command": "workbench.action.nextEditor",
         "when": "editorFocus"
     },
 
-    // For close window
+    // Disable
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
