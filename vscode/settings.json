@@ -1,10 +1,11 @@
 {
+    "window.commandCenter": true,
+    "window.newWindowDimensions": "maximized",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 16,
     "editor.fontFamily": "Consolas, 'Courier New', monospace, メイリオ",
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
     "file.eol": "\n",
@@ -14,8 +15,12 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
+    // VSCode Remote Container 間を 172.17.0.1 経由で通信する
+    // https://goropikari.hatenablog.com/entry/vscode_remote_container_host
+    "remote.localPortHost": "allInterfaces",
     "extensions.ignoreRecommendations": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "glassit.alpha": 250,
     "vim.handleKeys": {
         "<C-b>": false,
         "<C-f>": false,
@@ -36,9 +41,6 @@
         {
             "before": ["<"],
             "after": ["<", "g", "v"]
-        },
-    ],
-    "glassit.alpha": 240,
-    "window.commandCenter": true,
-    "window.newWindowDimensions": "maximized"
+        }
+    ]
 }

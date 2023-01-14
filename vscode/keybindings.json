@@ -3,43 +3,33 @@
     // For terminal
     {
         "key": "ctrl+;",
-        "command": "workbench.action.toggleMaximizedPanel",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "!terminalFocus"
     },
     {
         "key": "ctrl+`",
-        "command": "workbench.action.toggleMaximizedPanel",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "!terminalFocus"
     },
     {
         "key": "ctrl+;",
-        "command": "workbench.action.closePanel",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+`",
-        "command": "workbench.action.closePanel",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+;",
-        "command": "workbench.action.terminal.focus",
+        "command": "workbench.action.focusFirstEditorGroup",
         "when": "explorerViewletFocus"
     },
     {
         "key": "ctrl+`",
-        "command": "workbench.action.terminal.focus",
+        "command": "workbench.action.focusFirstEditorGroup",
         "when": "explorerViewletFocus"
-    },
-    {
-        "key": "ctrl+'",
-        "command": "workbench.action.closePanel",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.closePanel",
-        "when": "!terminalFocus"
     },
 
     // In terminal
