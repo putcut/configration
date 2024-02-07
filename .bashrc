@@ -119,9 +119,14 @@ fi
 # My configuration
 export PS1='\[\e[0;36m\]$PWD\n\[\e[0;33m\]\$ \[\e[0m\]'
 
+# ghq/peco
 function repo {
   local dir="$( ghq list -p | peco )"
   if [ ! -z "$dir" ] ; then
     cd "$dir"
   fi
 }
+
+# keychain
+/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$(hostname)-sh
