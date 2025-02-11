@@ -6,7 +6,8 @@ local config = wezterm.config_builder()
 config.automatically_reload_config = true
 
 -- This is where you actually apply your config choices
-config.font_size = 12.0
+config.font = wezterm.font("HackGen Console NF", {weight="Regular", stretch="Normal", style="Normal"})
+config.font_size = 14.0
 config.use_ime = true
 config.window_background_opacity = 0.85
 -- タイトルバーを消す
