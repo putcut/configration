@@ -133,3 +133,15 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Starship
 eval "$(starship init bash)"
+
+# pnpm
+export PNPM_HOME="/home/putcut/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# NeoVim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+. "$HOME/.cargo/env"
