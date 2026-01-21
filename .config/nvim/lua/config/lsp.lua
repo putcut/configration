@@ -6,7 +6,9 @@ vim.lsp.enable({
 vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "<F12>", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "<S-F12>", vim.lsp.buf.references, { desc = "List reference" })
+vim.keymap.set("n", "<F24>", vim.lsp.buf.references, { desc = "List reference" })
 vim.keymap.set("n", "<C-F12>", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+vim.keymap.set("n", "<F36>", vim.lsp.buf.implementation, { desc = "Go to implementation" })
 
 -- Diagnostics設定
 vim.diagnostic.config({
