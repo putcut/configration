@@ -8,3 +8,6 @@ vim.keymap.set("n", "<leader>wl", "<C-w>l", { desc = "Window right" })
 vim.keymap.set("n", "<leader>ww", "<C-w>w", { desc = "Window next" })
 vim.keymap.set("n", "<leader>wc", "<C-w>c", { desc = "Window close" })
 vim.keymap.set("n", "<leader>wo", "<C-w>o", { desc = "Window only" })
+
+-- Oil: 現在のファイルのディレクトリを開く
+vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" })

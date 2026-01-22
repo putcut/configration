@@ -12,3 +12,6 @@ opt.clipboard:append('unnamedplus,unnamed')
 
 -- for colorscheme
 opt.background = 'light'
+
+-- winbarにファイルパスを表示
+opt.winbar = '%f'  -- 相対パス (%F で絶対パス)
