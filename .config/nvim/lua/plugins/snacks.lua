@@ -28,5 +28,6 @@ return {
         { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
         { "<leader>fh", function() Snacks.picker.help() end, desc = "Help" },
         { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent Files" },
+        { "<leader>fs", function() Snacks.picker.lsp_symbols() end, desc = "Document Symbols" },
     },
 }

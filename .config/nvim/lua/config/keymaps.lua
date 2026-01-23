@@ -11,3 +11,6 @@ vim.keymap.set("n", "<leader>wo", "<C-w>o", { desc = "Window only" })
 
 -- Oil: 現在のファイルのディレクトリを開く
 vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" })
+
+-- Clear search highlight
+vim.keymap.set("n", "<Esc>", "<cmd>noh<cr>", { desc = "Clear search highlight" })
