@@ -25,10 +25,6 @@ if vim.env.WAYLAND_DISPLAY then
   }
 end
 
--- for colorscheme
-vim.cmd.colorscheme = 'nordic'
--- opt.background = 'light'
-
 -- winbarにファイルパスを表示
 opt.winbar = '%f'  -- 相対パス (%F で絶対パス)
 
