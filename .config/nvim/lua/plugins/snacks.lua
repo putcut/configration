@@ -19,6 +19,7 @@ return {
                 "node_modules",
                 "dist",
                 ".next",
+                ".venv",
             }
         },
     },
