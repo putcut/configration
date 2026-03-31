@@ -6,6 +6,21 @@ return {
     },
     config = function()
         local telescope = require("telescope")
+
+        telescope.setup({
+            extensions = {
+                zoxide = {
+                    mappings = {
+                        default = {
+                            after_action = function(selection)
+                                require("oil").open(selection.path)
+                            end,
+                        },
+                    },
+                },
+            },
+        })
+
         telescope.load_extension("zoxide")
     end,
     keys = {
