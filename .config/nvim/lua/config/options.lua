@@ -7,10 +7,8 @@ opt.expandtab = true
 opt.ai = true
 opt.hlsearch = true
 
--- clipboardをシステムと共有
-opt.clipboard:append('unnamedplus,unnamed')
-
 -- Wayland環境ではwl-copyのタイミング問題を回避するためコピーのみOSC 52を使用
+-- システムクリップボードとのやり取りは "+y / "+p で明示的に行う
 if vim.env.WAYLAND_DISPLAY then
   vim.g.clipboard = {
     name = 'OSC 52 + wl-paste',
