@@ -19,8 +19,8 @@ if vim.env.WAYLAND_DISPLAY then
       ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
     },
     paste = {
-      ['+'] = { 'wl-paste' },
-      ['*'] = { 'wl-paste', '--primary' },
+      ['+'] = { 'wl-paste', '--no-newline' },
+      ['*'] = { 'wl-paste', '--no-newline', '--primary' },
     },
   }
 end
