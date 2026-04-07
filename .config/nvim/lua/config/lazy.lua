@@ -21,6 +21,11 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- システムクリップボードとのコピペ用ショートカット
+vim.keymap.set({ 'n', 'v' }, '<Leader>y', '"+y')
+vim.keymap.set({ 'n', 'v' }, '<Leader>p', '"+p')
+vim.keymap.set({ 'n', 'v' }, '<Leader>P', '"+P')
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
