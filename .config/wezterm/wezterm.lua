@@ -23,7 +23,10 @@ wezterm.on('format-tab-title', function(tab)
 end)
 
 -- This is where you actually apply your config choices
-config.font = wezterm.font("HackGen Console NF", {weight="Regular", stretch="Normal", style="Normal"})
+config.font = wezterm.font_with_fallback({
+    { family = "HackGen Console NF", weight="Regular", stretch="Normal", style="Normal" },
+    { family = "Ubuntu Nerd Font" },
+})
 config.font_size = 12.0
 config.use_ime = true
 config.window_background_opacity = 0.85
