@@ -5,9 +5,26 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 config.automatically_reload_config = true
 
+-- Windowsの場合のみdefault_domainを指定
+local spawn_domain = "CurrentPaneDomain"
+if wezterm.target_triple:find("windows") then
+	config.default_domain = 'WSL:Ubuntu-24.04'
+	config.default_cwd = '/home/s-koike'
+	spawn_domain = { DomainName = 'WSL:Ubuntu-24.04' }
+end
+
+-- タブのタイトルをWSL distribution名にする
+wezterm.on('format-tab-title', function(tab)
+	local pane = tab.active_pane
+	local title = pane.domain_name or pane.title or ''
+	-- "WSL:Ubuntu-24.04" → "Ubuntu-24.04"
+	title = title:gsub('^WSL:', '')
+	return ' ' .. title .. ' '
+end)
+
 -- This is where you actually apply your config choices
 config.font = wezterm.font("HackGen Console NF", {weight="Regular", stretch="Normal", style="Normal"})
-config.font_size = 14.0
+config.font_size = 12.0
 config.use_ime = true
 config.window_background_opacity = 0.85
 -- タイトルバーを消す
@@ -18,7 +35,7 @@ config.keys = {
 	{
 		key = "t",
 		mods = "CTRL",
-		action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+		action = wezterm.action.SpawnTab(spawn_domain),
 	},
 	{
 		key = "[",
@@ -34,13 +51,13 @@ config.keys = {
 	{
 		key = "-",
 		mods = "CTRL",
-		action = wezterm.action { SplitVertical = { domain = "CurrentPaneDomain" } },
+		action = wezterm.action { SplitVertical = { domain = spawn_domain } },
 	},
 	-- 垂直ペイン分割
 	{
 		key = "\\",
 		mods = "CTRL",
-		action = wezterm.action { SplitHorizontal = { domain = "CurrentPaneDomain" } },
+		action = wezterm.action { SplitHorizontal = { domain = spawn_domain } },
 	},
 	-- ペインを閉じる
 	{
