@@ -112,5 +112,14 @@ config.keys = {
 -- For example, changing the color scheme:
 config.color_scheme = 'Seti (Gogh)'
 
+-- フォーカスしているペインを目立たせる
+config.inactive_pane_hsb = {
+	saturation = 0.3,
+	brightness = 0.3,
+}
+config.colors = {
+	split = '#88c0d0',
+}
+
 -- and finally, return the configuration to wezterm
 return config
