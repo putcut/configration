@@ -122,6 +122,26 @@ config.inactive_pane_hsb = {
 }
 config.colors = {
 	split = '#88c0d0',
+	ansi = {
+		'#4c566a', -- black (brighter so it stays readable on dark bg)
+		'#cd3f45', -- red
+		'#9fca56', -- green
+		'#e6cd69', -- yellow
+		'#55b5db', -- blue
+		'#a074c4', -- magenta
+		'#54ced6', -- cyan
+		'#d9d9d9', -- white
+	},
+	brights = {
+		'#5e6a82', -- bright black
+		'#cd3f45',
+		'#9fca56',
+		'#e6cd69',
+		'#55b5db',
+		'#a074c4',
+		'#54ced6',
+		'#ffffff',
+	},
 }
 
 -- and finally, return the configuration to wezterm
